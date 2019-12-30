@@ -11,10 +11,13 @@ export default function Demo() {
 
     return (
         <StyledRoot>
-            <Sidebar openDrawer={openDrawer}/>
+            <Sidebar openDrawer={openDrawer} />
 
             <StyledMain openDrawer={openDrawer}>
-                <Header />
+                <Header
+                    openDrawer={openDrawer}
+                    setOpenDrawer={setOpenDrawer}
+                />
 
                 {/* <Content /> */}
             </StyledMain>

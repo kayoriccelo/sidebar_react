@@ -6,4 +6,5 @@ export const StyledRoot = styled.div`
     width: 100%;
     display: flex;
     box-shadow: inset 1px -12px 3px -12px rgba(0,0,0,0.26);
+    justify-content: flex-end;
 `;
