@@ -2,10 +2,22 @@ import styled from 'styled-components';
 
 
 export const StyledRoot = styled.div`
-    position: relative;
     box-shadow: 4px 0px 8px -8px rgba(0,0,0,0.75);!important;
     white-space: nowrap;
-    width: 280px;
     height: 100vh;
-    border-right: none;
+    
+    ${props => props.openDrawer ? 
+    `
+        position: relative;
+        width: 280px;
+        border-right: none;
+    ` : `
+        overflow-x: hidden;
+        transition: all .60s ease;
+        width: 60px;
+        &:hover: {
+            width: 280px;
+            position: absolute;
+        }
+    `}
 `;

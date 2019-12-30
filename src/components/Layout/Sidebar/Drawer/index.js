@@ -5,7 +5,7 @@ import { StyledRoot } from './styled';
 
 export default function Drawer(props) {
     return (
-        <StyledRoot>
+        <StyledRoot {...props}>
             {props.children}
         </StyledRoot>
     );

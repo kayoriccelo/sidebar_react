@@ -6,7 +6,7 @@ import List from './List';
 
 const Sidebar = props => {
     return (
-        <Drawer>
+        <Drawer {...props}>
             {/* <List>
                 
             </List> */}
