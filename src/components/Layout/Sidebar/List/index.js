@@ -1,10 +1,12 @@
 import React from 'react';
 
+import { StyledRoot } from './styled';
+
 
 export default function List(props) {
     return (
-        <>
-            List!!!
-        </>
+        <StyledRoot>
+            {props.children}
+        </StyledRoot>
     );
 };

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import { Sidebar, Header, Content } from '../../components';
-import { StyledRoot, StyledMain } from './styled';
+import { Sidebar, Content } from '../../components';
+import { StyledRoot } from './styled';
 
 
 export default function Demo() {
@@ -11,16 +11,12 @@ export default function Demo() {
 
     return (
         <StyledRoot>
-            <Sidebar openDrawer={openDrawer} />
+            <Sidebar
+                openDrawer={openDrawer}
+                setOpenDrawer={setOpenDrawer}
+            />
 
-            <StyledMain openDrawer={openDrawer}>
-                <Header
-                    openDrawer={openDrawer}
-                    setOpenDrawer={setOpenDrawer}
-                />
-
-                {/* <Content /> */}
-            </StyledMain>
+            <Content openDrawer={openDrawer} />
         </StyledRoot>
     );
 };
