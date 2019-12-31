@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const StyledRoot = styled.div`
+export const StyledRoot = styled.span`
     display: flex;
     flex-direction: column;
     align-items: space-between;
@@ -9,13 +9,8 @@ export const StyledRoot = styled.div`
     ${props => props.openDrawer ? 
     `
         width: 280px;
-
     ` : `
         overflow-x: hidden;
         width: 60px;
-        &:hover: {
-            width: 280px;
-            position: absolute;
-        }
     `}
 `;
