@@ -11,7 +11,7 @@ export const StyledButton = styled.button`
     color: rgba(0, 110, 156, 0.69);
     cursor: pointer;
     transition: all .60s ease;
-    background-color: transparent;
+    background-color: inherit;
     &:hover {
         color: white;
         background: rgba(0, 110, 156, 0.69) 
