@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Button from '../../Button';
-import Drawer from './Drawer';
-import List from './List';
+import Arrow from './Arrow';
+import Drawer from '../../Drawer';
+import List from '../../List';
 import Item, { GroupItem } from './Item';
 import menus from '../../../routes/menus';
 
@@ -24,7 +24,8 @@ const Sidebar = props => {
             <List>
                 {menus.map(menuItem => renderItem(menuItem))}
             </List>
-            <Button
+
+            <Arrow
                 label={props.openDrawer ? "<" : '>'}
                 onClick={() => props.setOpenDrawer(!props.openDrawer)}
             />

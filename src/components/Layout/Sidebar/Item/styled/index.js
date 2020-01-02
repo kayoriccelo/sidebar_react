@@ -15,18 +15,22 @@ const keyframeButton = keyframes`
 `;
 
 export const StyledButton = styled.button`
-    padding: 8px;
-    margin: 0px 5px;
-    border-radius: 4px;
-    text-align: left;
-    font-size: 12px;
-    color: rgba(103, 103, 103, 0.90);
-    background-color: inherit;
+    position: relative;
+    display: inline-block;
+    transition: all 0.60s ease-in-out;    
+    outline: 0;
+    overflow: hidden;
     cursor: pointer;
     box-sizing: none;
+    border-radius: 4px;
     border-width: 0px;
-    outline: 0;
+    color: rgba(103, 103, 103, 0.90);
+    background-color: inherit;
+    padding: 8px;
     ${props => props.isSubMenu && 'padding-left: 15px;'}
+    margin: 0px 5px;
+    text-align: left;
+    font-size: 12px;
     &:hover {
         ${props => !props.isSubMenu ? 'padding-left: 20px' : 'padding-left: 25px'};
         border-right: 3px solid #8c8c8c;
@@ -34,17 +38,7 @@ export const StyledButton = styled.button`
     }
     &:focus {
         border-right: 3px solid rgba(103, 103, 103, 0.90);
-        background-color: #ddd;
-        font-weight: bold;
-        &:before {
-            animation: ${keyframeButton} 100s;
-        }  
+        background-color: #f2f2f2;
+        font-weight: bold;       
     }
-    position: relative;
-    display: inline-block;
-    transition: all 0.4s ease-in-out;
-    span[class^='ion'] {
-        position: relative;
-    }
-
 `;
