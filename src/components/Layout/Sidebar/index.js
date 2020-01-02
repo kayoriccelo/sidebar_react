@@ -1,9 +1,10 @@
 import React from 'react';
 
-import Arrow from './Arrow';
-import Drawer from '../../Drawer';
-import List from '../../List';
+import Drawer from './Drawer';
+import List from './List';
+import Head from './Head';
 import Item, { GroupItem } from './Item';
+import Arrow from './Arrow';
 import menus from '../../../routes/menus';
 
 
@@ -13,14 +14,17 @@ const Sidebar = props => {
             !item.menus ?
                 <Item {...item} /> :
                 <>
-                    <GroupItem {...item} />
-                    {item.menus.map(subMenuItem => <Item isSubMenu {...subMenuItem} />)}
+                    <GroupItem {...item}>
+                        {item.menus.map(subMenuItem => <Item isSubMenu {...subMenuItem} />)}
+                    </GroupItem>
                 </>
-        )
-    }
+        );
+    };
 
     return (
         <Drawer {...props}>
+            <Head />
+
             <List>
                 {menus.map(menuItem => renderItem(menuItem))}
             </List>
@@ -40,6 +44,8 @@ const SidebarMobile = props => {
         </>
     );
 };
+
+export default Sidebar;
 
 export {
     Sidebar,

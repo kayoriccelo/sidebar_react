@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { StyledRoot as StyledList } from '../../List/styled';
+import { StyledRoot as List } from '../../List/styled';
 
 
 export const StyledRoot = styled.div`
@@ -8,13 +8,14 @@ export const StyledRoot = styled.div`
     flex-direction: column;
     align-items: space-between;
     transition: all .60s ease;
+    background: white;
     ${props => props.openDrawer ? 
     `
         width: 280px;
     ` : `
         overflow-x: hidden;
         width: 60px;
-        &:hover ${StyledList} {
+        &:hover ${List} {
             width: 228px;
             min-width: 60px;
             overflow-x: auto;

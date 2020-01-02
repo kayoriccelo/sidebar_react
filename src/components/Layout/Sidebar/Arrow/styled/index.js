@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 export const StyledArrow = styled.button`
     padding: 3px 8px;
-    margin: auto;
-    margin-bottom: 8px;
+    margin: 8px auto;
     border-radius: 50%;
     font-size: 18px;
     font-weight: bold;
