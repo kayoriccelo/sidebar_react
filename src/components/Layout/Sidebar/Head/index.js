@@ -1,12 +1,15 @@
 import React from 'react';
 
-import { StyledRoot } from './styled'; 
+import Logo from '../../../Logo';
+import { StyledRoot, StyledTitle } from './styled'; 
 
 
-export default function Head(props) {
+export default function Head() {
     return (
         <StyledRoot>
-            Head!!!
+            <Logo />
+
+            <StyledTitle children="Sidebar" />
         </StyledRoot>
     );
 };

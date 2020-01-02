@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 
 
-export const StyledArrow = styled.button`
-    padding: 3px 8px;
+export const StyledButtonMenu = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
     margin: 8px auto;
     border-radius: 50%;
     font-size: 18px;
@@ -13,11 +16,17 @@ export const StyledArrow = styled.button`
     background-color: inherit;
     &:hover {
         color: white;
-        background: #8c8c8c;
+        background: #ddd;
     }, 
     &:focus {
         outline: none;
     },    
     box-sizing: none;
     border-width: 0px;
+`;
+
+export const StyledMenuOpen = styled.img`
+`;
+
+export const StyledMenuClose = styled.img`
 `;

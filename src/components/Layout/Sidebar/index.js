@@ -4,7 +4,7 @@ import Drawer from './Drawer';
 import List from './List';
 import Head from './Head';
 import Item, { GroupItem } from './Item';
-import Arrow from './Arrow';
+import ButtonMenu from './ButtonMenu';
 import menus from '../../../routes/menus';
 
 
@@ -12,7 +12,7 @@ const Sidebar = props => {
     const renderItem = item => {
         return (
             !item.menus ?
-                <Item {...item} /> :
+                <Item {...item} isInicio={item.path === '/'} /> :
                 <>
                     <GroupItem {...item}>
                         {item.menus.map(subMenuItem => <Item isSubMenu {...subMenuItem} />)}
@@ -29,8 +29,8 @@ const Sidebar = props => {
                 {menus.map(menuItem => renderItem(menuItem))}
             </List>
 
-            <Arrow
-                label={props.openDrawer ? "<" : '>'}
+            <ButtonMenu
+                open={props.openDrawer}
                 onClick={() => props.setOpenDrawer(!props.openDrawer)}
             />
         </Drawer>

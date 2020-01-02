@@ -10,5 +10,6 @@ export const StyledRoot = styled.div`
 export const StyledList = styled.div`
     display: flex;
     flex-direction: column;
+    margin-left: 4px ;
     overflow: hidden;
 `;

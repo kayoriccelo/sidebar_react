@@ -18,43 +18,43 @@ export default [
             },
             {
                 title: 'Item Exemplo',
-                path: '/',
+                path: '/item',
                 iconName: 'label_important-24px.svg',
                 roles: ['guest', 'admin']
             },
             {
                 title: 'Item Exemplo',
-                path: '/',
+                path: '/item',
                 iconName: 'label_important-24px.svg',
                 roles: ['guest', 'admin']
             },
             {
                 title: 'Item Exemplo',
-                path: '/',
+                path: '/item',
                 iconName: 'label_important-24px.svg',
                 roles: ['guest', 'admin']
             },
             {
                 title: 'Item Exemplo',
-                path: '/',
+                path: '/item',
                 iconName: 'label_important-24px.svg',
                 roles: ['guest', 'admin']
             },
             {
                 title: 'Item Exemplo',
-                path: '/',
+                path: '/item',
                 iconName: 'label_important-24px.svg',
                 roles: ['guest', 'admin']
             },
             {
                 title: 'Item Exemplo',
-                path: '/',
+                path: '/item',
                 iconName: 'label_important-24px.svg',
                 roles: ['guest', 'admin']
             },
             {
                 title: 'Item Exemplo',
-                path: '/',
+                path: '/item',
                 iconName: 'label_important-24px.svg',
                 roles: ['guest', 'admin']
             }
@@ -62,61 +62,61 @@ export default [
     },
     {
         title: 'Menu Exemplo',
-        path: '/',
+        path: '/item',
         iconName: 'label-24px.svg',
         roles: ['guest', 'admin']
     },
     {
         title: 'Menu Exemplo',
-        path: '/',
+        path: '/item',
         iconName: 'label-24px.svg',
         roles: ['guest', 'admin']
     },
     {
         title: 'Menu Exemplo',
-        path: '/',
+        path: '/item',
         iconName: 'label-24px.svg',
         roles: ['guest', 'admin']
     },
     {
         title: 'Menu Exemplo',
-        path: '/',
+        path: '/item',
         iconName: 'label-24px.svg',
         roles: ['guest', 'admin']
     },
     {
         title: 'Menu Exemplo',
-        path: '/',
+        path: '/item',
         iconName: 'label-24px.svg',
         roles: ['guest', 'admin']
     },
     {
         title: 'Menu Exemplo',
-        path: '/',
+        path: '/item',
         iconName: 'label-24px.svg',
         roles: ['guest', 'admin']
     },
     {
         title: 'Menu Exemplo',
-        path: '/',
+        path: '/item',
         iconName: 'label-24px.svg',
         roles: ['guest', 'admin']
     },
     {
         title: 'Menu Exemplo',
-        path: '/',
+        path: '/item',
         iconName: 'label-24px.svg',
         roles: ['guest', 'admin']
     },
     {
         title: 'Menu Exemplo',
-        path: '/',
+        path: '/item',
         iconName: 'label-24px.svg',
         roles: ['guest', 'admin']
     },
     {
         title: 'Menu Exemplo',
-        path: '/',
+        path: '/item',
         iconName: 'label-24px.svg',
         roles: ['guest', 'admin']
     }
