@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { StyledRoot as List } from '../../List/styled';
+import { StyledRoot as List } from '../../List/style/styled';
 
 
 export const StyledRoot = styled.div`
@@ -11,17 +11,16 @@ export const StyledRoot = styled.div`
     background: white;
     ${props => props.openDrawer ? 
     `
-        width: 280px;
+        width: 284px;
     ` : `
         overflow-x: hidden;
         width: 60px;
         &:hover ${List} {
-            width: 228px;
             min-width: 60px;
             overflow-x: auto;
         }
         &:hover {
-            width: 280px;
+            width: 284px;
         }
     `}
 `;

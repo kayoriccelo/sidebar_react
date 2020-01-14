@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyledRoot } from './styled';
+import { StyledRoot } from './style/styled';
 
 
 export default function Drawer(props) {

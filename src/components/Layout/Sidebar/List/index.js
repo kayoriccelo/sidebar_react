@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyledRoot, StyledList } from './styled';
+import { StyledRoot, StyledList } from './style/styled';
 
 
 export default function List(props) {

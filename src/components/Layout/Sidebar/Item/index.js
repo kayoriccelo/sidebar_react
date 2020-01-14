@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 
-import { StyledButton, StyledIcon, StyledArrow, StyledGroup } from './styled';
+import { StyledButton, StyledIcon, StyledArrow, StyledGroup } from './style/styled';
 
 
-const Item = ({ iconName, title, isSubMenu, isInicio, handleClick }) => {
-
-    return (
-        <StyledButton isSubMenu={isSubMenu} isInicio={isInicio} onClick={handleClick}>
-            {iconName && <StyledIcon isInicio={isInicio} alt={title} src={require(`../../../../assets/images/${iconName}`)} />} {title}
-        </StyledButton>
-    );
-};
+const Item = ({ iconName, title, isSubMenu, isInicio, handleClick }) => (
+    <StyledButton isSubMenu={isSubMenu} isInicio={isInicio} onClick={handleClick}>
+        {iconName && <StyledIcon isInicio={isInicio} alt={title} src={require(`../../../../assets/images/${iconName}`)} />} {title}
+    </StyledButton>
+);
 
 const GroupItem = ({ iconName, title, children }) => {
     const [open, setOpen] = useState(false);

@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 
 import { Sidebar, Content } from '../../components';
-import { StyledRoot } from './styled';
+import { StyledRoot } from './style/styled';
 
 
 export default function Demo() {
     const [openDrawer, setOpenDrawer] = useState(true);
-
-    // effect dimensions
 
     return (
         <StyledRoot>

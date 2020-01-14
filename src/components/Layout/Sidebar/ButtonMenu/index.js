@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyledButtonMenu, StyledMenuClose, StyledMenuOpen } from './styled';
+import { StyledButtonMenu, StyledMenuClose, StyledMenuOpen } from './style/styled';
 
 
 export default function ButtonMenu(props) {

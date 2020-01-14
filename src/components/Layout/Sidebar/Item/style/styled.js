@@ -19,8 +19,8 @@ export const StyledButton = styled.button`
     border-width: 0px;
     color: rgba(103, 103, 103, 0.90);
     background-color: inherit;
-    width: calc(100% - 2px);
-    padding: 8px 7.5px;
+    width: 100%;
+    padding: 8px 0px 8px 9px;
     ${props => props.isSubMenu && 'padding-left: 12px;'}
     text-align: left;
     font-size: 12px;

@@ -37,17 +37,4 @@ const Sidebar = props => {
     );
 };
 
-const SidebarMobile = props => {
-    return (
-        <>
-            Sidebar Modile!!!
-        </>
-    );
-};
-
 export default Sidebar;
-
-export {
-    Sidebar,
-    SidebarMobile
-};
